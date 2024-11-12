@@ -6,6 +6,10 @@ import { SearchForm } from "./search-form";
 export type SearchResult = {
   public_id: string;
   tags: string[];
+  url: string;
+  alt?: string;
+  title?: string;
+  description?: string;
 };
 
 export default async function GalleryPage({
@@ -13,6 +17,10 @@ export default async function GalleryPage({
 }: {
   searchParams: {
     search: string;
+    url: string;
+    width: string;
+    height: string;
+    
   };
 }) {
   const results = (await cloudinary.v2.search

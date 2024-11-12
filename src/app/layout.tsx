@@ -113,14 +113,15 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={inter.className}>
         <div className="border-b">
-          <div className="flex h-16 items-center px-4 container mx-auto">
-            <Image
-              src="/album.png"
-              width="50"
-              height="50"
+          <div className="flex h-16 items-center px-4 container mx-auto gap-3">
+            <Image 
+              src="/logoo.png"
+              width="60"
+              height="40"
+              
               alt="icon of this photo album app"
             />
-            Shutter Cloud
+            Shutter Photos
             <div className="ml-auto flex items-center space-x-4">
               <Avatar>
                 <AvatarImage
